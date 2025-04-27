@@ -9,6 +9,8 @@
     - Data Preprocessing
 4. Model Trainer
 5. Model Evaluation
+    - MLFlow
+    - DagsHub
 
 ## Workflows
 
