@@ -9,7 +9,7 @@ class DataIngestionTrainingPipeline:
     def __init__(self):
         pass
 
-    def initial_data_ingestion(self):
+    def initiate_data_ingestion(self):
         config = ConfigurationManager()
         data_ingestion_config = config.get_data_ingestion_config()
         data_ingestion = DataIngestion(data_ingestion_config)
@@ -19,14 +19,10 @@ class DataIngestionTrainingPipeline:
 
 if __name__ == "__main__":
     try:
-        logger.info(
-            f"===================== Stage: {STAGE_NAME} started ====================="
-        )
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
         obj = DataIngestionTrainingPipeline()
-        obj.initial_data_ingestion()
-        logger.info(
-            f"===================== Stage: {STAGE_NAME} completed ====================="
-        )
+        obj.initiate_data_ingestion()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<")
     except Exception as e:
         logger.exception(e)
         raise e
