@@ -2,7 +2,7 @@ from src.data_science.config.configuration import ConfigurationManager
 from src.data_science.components.data_ingestion import DataIngestion
 from src.data_science import logger
 
-STAGE_NAME = "Data Ingestion stage"
+STAGE_NAME = "Data Ingestion"
 
 
 class DataIngestionTrainingPipeline:
