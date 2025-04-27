@@ -22,13 +22,3 @@ class DataTransformationPipeline:
                 raise Exception("Data scheme is not valid. Please check the data validation stage.")
         except Exception as e:
             raise e
-
-if __name__ == "__main__":
-    try:
-        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        obj = DataTransformationPipeline()
-        obj.initiate_data_transformation()
-        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<")
-    except Exception as e:
-        logger.exception(e)
-        raise e
